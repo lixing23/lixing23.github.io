@@ -34,6 +34,13 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+@media (max-width: 768px) {
+    body {
+        background-size: 100%; /* 调整背景图像的大小，以适应小屏幕 */
+        background-attachment: scroll; /* 允许背景图像滚动，以确保在移动端正常显示 */
+        background-position: initial; /* 重置 background-position，使其适应移动端 */
+    }
+}
 i.icon,i.fa {
     margin-right: 6px
 }
@@ -721,7 +728,7 @@ input::-webkit-input-placeholder {
 <div class="main">
     <h1 class="logo">
     <a href="goodweb.html">
-    <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=2418379369&spec=100">
+    <!-- <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=2418379369&spec=100"> -->
     <span>TBH导航</span>
     </a>
     </h1>
