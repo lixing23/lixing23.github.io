@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <title>🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄</title>
+
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- 国外CDN资源 -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/ShaderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/CopyShader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+</head>
+
+<body>
+      <a href="https://mp.weixin.qq.com/s/oxLqXBcLCT8ij67DjkW2kw" class="hide_buttom"
+  style="position: fixed;top: 10%;right: 10px;width: 35px;height: 35px;z-index: 999;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">制作</a>
+  <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="hide_buttom"
+  style="position: fixed;top: 4%;right: 10px;width: 35px;height: 35px;z-index: 998;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">更多</a>
+          <a href="https://pan.quark.cn/s/3344d23e48a8" class="hide_buttom"
+  style="position: fixed;top: 16%;right: 10px;width: 35px;height: 35px;z-index: 997;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">源码</a>
+  <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="hide_buttom"
+  style="position: fixed;top: 22%;right: 10px;width: 35px;height: 35px;z-index: 996;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">红包</a>
+
+  <!-- 音乐选择页面，选择完之后会覆盖替换掉 -->
+  <div id="overlay">
+    <!-- 音乐列表整体盒子 -->
+    <div id="music-list-box">
+      <h2>选择一首音乐开始</h2>
+      <!-- 默认基础音乐列表 -->
+      <ul id="base-music-list"></ul>
+
+      <ul id="upload-music">
+        <li class="separator">或</li>
+        <!-- 上传本地音乐 -->
+        <li>
+          <label class="upload-btn" for="upload">打开音乐文件</label>
+          <input type="file" id="upload" hidden />
+        </li>
+      </ul>
+    </div>
+
+    <!-- 背景星星动画，也会被覆盖掉 -->
+    <iframe id="overlay-bg" src="overlay-bg.html" frameborder="0"></iframe>
+  </div>
+
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
