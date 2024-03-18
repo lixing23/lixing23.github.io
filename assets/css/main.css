@@ -58,3 +58,6 @@ body {
     margin: auto;
     background: rgba(255,255,255,.3);
 }
+.button-container a {
+    margin-right: 10px; /* 设置右边距 */
+}
